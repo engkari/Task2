@@ -1,0 +1,17 @@
+{
+  "name": "Appenv",
+  "description": "Environment for Mysql + Jboss",
+  "cookbook_versions": {
+
+  },
+  "json_class": "Chef::Environment",
+  "chef_type": "environment",
+  "default_attributes": {
+    "mysql hostname": "192.168.71.2",
+    "jboss hostname": "192.168.71.3",
+    "application repo": "http://www.cumulogic.com/download/Apps/guestbookapp.zip",
+    "port": "3308"
+  },
+  "override_attributes": {
+  }
+}
