@@ -4,9 +4,7 @@
 <% if @config.charset %>
 default-character-set          = <%= @config.charset %>
 <% end %>
-<% if @config.port %>
-port                           = <%= @config.port %>
-<% end %>
+port                           = <%= @node['port'] %>
 <% if @socket_file %>
 socket                         = <%= @socket_file %>
 <% end %>
@@ -29,9 +27,9 @@ socket                         = <%= @socket_file %>
 <% if @config.bind_address %>
 bind-address                   = <%= @config.bind_address %>
 <% end %>
-<% if @config.port %>
-port                           = <%= @config.port %>
-<% end %>
+
+port                           = <%= @node['port'] %>
+
 <% if @data_dir %>
 datadir                        = <%= @data_dir %>
 <% end %>
