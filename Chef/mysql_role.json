@@ -1,0 +1,18 @@
+{
+  "name": "Mysql-server",
+  "description": "Mysql server with installed sql dump",
+  "json_class": "Chef::Role",
+  "default_attributes": {
+
+  },
+  "override_attributes": {
+
+  },
+  "chef_type": "role",
+  "run_list": [
+    "recipe[mysqldeploy]"
+  ],
+  "env_run_lists": {
+
+  }
+}
